@@ -30,6 +30,8 @@ class DatePickerTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        datePicker.addTarget(self, action: #selector(dateDidChange), for: .valueChanged)
+        self.contentView.addSubview(datePicker)
     }
     
     required init?(coder: NSCoder) {
@@ -40,8 +42,7 @@ class DatePickerTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
-        datePicker.addTarget(self, action: #selector(dateDidChange), for: .valueChanged)
-        self.contentView.addSubview(datePicker)
+       
     }
     
     func updateCell(date: Date, indexPath: IndexPath) {
