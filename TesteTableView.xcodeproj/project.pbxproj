@@ -13,6 +13,8 @@
 		1DA7A66026FE273D00CB8EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA7A65E26FE273D00CB8EFA /* Main.storyboard */; };
 		1DA7A66226FE273E00CB8EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA7A66126FE273E00CB8EFA /* Assets.xcassets */; };
 		1DA7A66526FE273E00CB8EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA7A66326FE273E00CB8EFA /* LaunchScreen.storyboard */; };
+		1DA7A66D26FE296D00CB8EFA /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7A66C26FE296D00CB8EFA /* DateTableViewCell.swift */; };
+		1DA7A66F26FE2A6400CB8EFA /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7A66E26FE2A6400CB8EFA /* DatePickerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1DA7A66126FE273E00CB8EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA7A66426FE273E00CB8EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA7A66626FE273E00CB8EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA7A66C26FE296D00CB8EFA /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		1DA7A66E26FE2A6400CB8EFA /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1DA7A65726FE273D00CB8EFA /* TesteTableView */ = {
 			isa = PBXGroup;
 			children = (
+				1DAB9EE926FE98CD00711B14 /* Cells */,
 				1DA7A65826FE273D00CB8EFA /* AppDelegate.swift */,
 				1DA7A65A26FE273D00CB8EFA /* SceneDelegate.swift */,
 				1DA7A65C26FE273D00CB8EFA /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				1DA7A66626FE273E00CB8EFA /* Info.plist */,
 			);
 			path = TesteTableView;
+			sourceTree = "<group>";
+		};
+		1DAB9EE926FE98CD00711B14 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DA7A66C26FE296D00CB8EFA /* DateTableViewCell.swift */,
+				1DA7A66E26FE2A6400CB8EFA /* DatePickerTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 				1DA7A65D26FE273D00CB8EFA /* ViewController.swift in Sources */,
 				1DA7A65926FE273D00CB8EFA /* AppDelegate.swift in Sources */,
 				1DA7A65B26FE273D00CB8EFA /* SceneDelegate.swift in Sources */,
+				1DA7A66D26FE296D00CB8EFA /* DateTableViewCell.swift in Sources */,
+				1DA7A66F26FE2A6400CB8EFA /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
