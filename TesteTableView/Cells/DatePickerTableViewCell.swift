@@ -32,6 +32,14 @@ class DatePickerTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         datePicker.addTarget(self, action: #selector(dateDidChange), for: .valueChanged)
         self.contentView.addSubview(datePicker)
+        datePicker.topAnchor.constraint(
+            equalTo: self.topAnchor).isActive = true
+        datePicker.leadingAnchor.constraint(
+            equalTo: self.leadingAnchor).isActive = true
+        datePicker.trailingAnchor.constraint(
+            equalTo: self.trailingAnchor).isActive = true
+        datePicker.bottomAnchor.constraint(
+            equalTo: self.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

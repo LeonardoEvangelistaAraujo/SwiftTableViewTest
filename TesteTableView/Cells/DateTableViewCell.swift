@@ -27,7 +27,6 @@ class DateTableViewCell: UITableViewCell {
          return 44.0
      }
     
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview(label)
@@ -54,9 +53,26 @@ class DateTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateText(text: String, date: Date) {
-        label.text = text
-        dateLabel.text = date.ISO8601Format()
+    func setupDate(date: Date) {
+    
+        if date.diffDateToPresentDays > 0 {
+            var value =  "dia"
+            if date.diffDateToPresentDays > 1 {
+                value =  "dias"
+            }
+            let days = " (\(date.diffDateToPresentDays) \(value) ) "
+            self.dateLabel.text = date.convertDateToString(format: "dd/MM/yyyy") + days
+            
+        } else {
+            self.dateLabel.text = Date().dateToStringISO8601
+        }
+
+    }
+    
+    func setupTime(date: Date) {
+
+        dateLabel.text = date.convertDateToString(format: "HH:mm a")
+        
     }
     
 }

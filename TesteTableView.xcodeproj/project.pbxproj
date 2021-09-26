@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D375A56270105B200537959 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D375A55270105B200537959 /* DateExtension.swift */; };
+		1D375A5827010C0900537959 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D375A5727010C0900537959 /* TextViewTableViewCell.swift */; };
 		1DA7A65926FE273D00CB8EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7A65826FE273D00CB8EFA /* AppDelegate.swift */; };
 		1DA7A65B26FE273D00CB8EFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7A65A26FE273D00CB8EFA /* SceneDelegate.swift */; };
 		1DA7A65D26FE273D00CB8EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7A65C26FE273D00CB8EFA /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D375A55270105B200537959 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1D375A5727010C0900537959 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
 		1DA7A65526FE273D00CB8EFA /* TesteTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA7A65826FE273D00CB8EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA7A65A26FE273D00CB8EFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 				1DA7A66126FE273E00CB8EFA /* Assets.xcassets */,
 				1DA7A66326FE273E00CB8EFA /* LaunchScreen.storyboard */,
 				1DA7A66626FE273E00CB8EFA /* Info.plist */,
+				1D375A55270105B200537959 /* DateExtension.swift */,
 			);
 			path = TesteTableView;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 			children = (
 				1DA7A66C26FE296D00CB8EFA /* DateTableViewCell.swift */,
 				1DA7A66E26FE2A6400CB8EFA /* DatePickerTableViewCell.swift */,
+				1D375A5727010C0900537959 /* TextViewTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA7A65D26FE273D00CB8EFA /* ViewController.swift in Sources */,
+				1D375A56270105B200537959 /* DateExtension.swift in Sources */,
 				1DA7A65926FE273D00CB8EFA /* AppDelegate.swift in Sources */,
 				1DA7A65B26FE273D00CB8EFA /* SceneDelegate.swift in Sources */,
 				1DA7A66D26FE296D00CB8EFA /* DateTableViewCell.swift in Sources */,
+				1D375A5827010C0900537959 /* TextViewTableViewCell.swift in Sources */,
 				1DA7A66F26FE2A6400CB8EFA /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
